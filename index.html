@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title> Live4D: Decoupled Object and Scene Modeling via Double-Branch 4D Diffusion  </title>
+    
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link href="./index_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="file:///D:/paper/20210512/ICASSP/ICASSP2025/submit/websiteMotion4D240906/4D-fy_%20Text-to-4D%20Generation%20Using%20Hybrid%20Score%20Distillation%20Sampling_files/Highlight-Clean.css">
+    <link rel="stylesheet" href="./index_files/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://sherwinbahmani.github.io/4dfy/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://sherwinbahmani.github.io/4dfy/data/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://sherwinbahmani.github.io/4dfy/data/favicon-16x16.png">
+    <link rel="manifest" href="https://sherwinbahmani.github.io/4dfy/site.webmanifest">
+    <!-- <meta name="robots" content="noindex"> -->
+
+    <meta property="og:site_name" content="4D-fy">
+    <meta property="og:type" content="video.other">
+    <meta property="og:title" content=" Live4D: Decoupled Object and Scene Modeling via Double-Branch 4D Diffusion  ">
+    <meta property="og:description" content=" Live4D: Decoupled Object and Scene Modeling via Double-Branch 4D Diffusion  ">
+    <meta property="og:url" content="">
+
+</head>
+
+<body>
+    <div class="highlight-clean" style="padding-bottom: 0px; padding-top: 20px;">
+        <div class="container" style="max-width: 1024px; margin-bottom: 20px">
+            <h1 class="text-center" style="font-size:35px;"> Live4D: Decoupled Object and Scene Modeling via Double-Branch 4D Diffusion  </h1>
+        </div>
+        <div class="container" style="max-width: 1024px; margin-bottom: 20px;">
+
+            <div class="container" style="max-width: 1024px; margin-bottom: 20px">
+                <h1 class="text-center" style="font-size:22px;"> </h1>
+            </div>
+        </div>
+        <div id="container">
+ 
+        </div>
+    </div>
+    <hr class="divider">
+
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Abstract</h2>
+                    </div>
+                </div>
+                <p>
+                     Live4D: Decoupled Object and Scene Modeling via Double-Branch 4D Diffusion  
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Method</h2>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-md-12">
+                <p>
+                     Live4D: Decoupled Object and Scene Modeling via Double-Branch 4D Diffusion  
+                </p>
+                &nbsp;
+                <div class="compositional captioned_videos">
+                     <iframe src="./index_files/Live4D250901.pdf" style="width: 100%; height: 500px;" frameborder="0">
+                       This browser does not support PDFs. Please download the PDF to view it: 
+                      <a href="./index_files/Live4D250901.pdf">Download PDF</a>
+                     </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+
+
+ 
+
+
+
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Comparison1</h2>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex0" loop="" playsinline="" autoplay="" muted="" src="data/comparative experiment/Trainacrossvalley/1-4dfy.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">4dfy:Train across valley</h6>
+        </div>
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex1" loop="" playsinline="" autoplay="" muted="" src="data/comparative experiment/Trainacrossvalley/2-VividDream.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">VividDream:Train across valley</h6>
+        </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex2" loop="" playsinline="" autoplay="" muted="" src="data/comparative experiment/Trainacrossvalley/3-HoloTime.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">HoloTime:Train across valley</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex3" loop="" playsinline="" autoplay="" muted="" src="data/comparative experiment/Trainacrossvalley/4-SV4D2.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">SV4D2:Train across valley</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex4" loop="" playsinline="" autoplay="" muted="" src="data/comparative experiment/Trainacrossvalley/5-4real.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">5-4real:Train across valley</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex5" loop="" playsinline="" autoplay="" muted="" src="data/comparative experiment/Trainacrossvalley/6-4realvideo.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">4realvideo:Train across valley</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex6" loop="" playsinline="" autoplay="" muted="" src="data/comparative experiment/Trainacrossvalley/7-CAT4D2.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">CAT4D:Train across valley</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex7" loop="" playsinline="" autoplay="" muted="" src="data/comparative experiment/Trainacrossvalley/8-ours.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">ours:Train across valley</h6>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+ 
+
+
+
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Ablation</h2>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex0" loop="" playsinline="" autoplay="" muted="" src="data/ablation/A woman is driving a convertible/1.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">Baseline:A woman is driving a convertible</h6>
+        </div>
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex1" loop="" playsinline="" autoplay="" muted="" src="data/ablation/A woman is driving a convertible/2.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">Text Extended Module:A woman is driving a convertible</h6>
+        </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex2" loop="" playsinline="" autoplay="" muted="" src="data/ablation/A woman is driving a convertible/3.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Diagonal Cross Attention:A woman is driving a convertible.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex3" loop="" playsinline="" autoplay="" muted="" src="data/ablation/A woman is driving a convertible/4.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Text-4D Gated Mechanism:A woman is driving a convertible.</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex4" loop="" playsinline="" autoplay="" muted="" src="data/ablation/A woman is driving a convertible/5.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Data Weighted Training:A woman is driving a convertible</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex5" loop="" playsinline="" autoplay="" muted="" src="data/ablation/A woman is driving a convertible/6.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Spherical Cross Attention:A woman is driving a convertible</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex6" loop="" playsinline="" autoplay="" muted="" src="data/ablation/A woman is driving a convertible/7.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Ours:A woman is driving a convertible</h6>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Displayment1-multiple objects</h2>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex0" loop="" playsinline="" autoplay="" muted="" src="data/teaser/A girl is chopping wood/Focused Wood Chopping2025-07-12_10-48-35.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">A girl is chopping wood</h6>
+        </div>
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex1" loop="" playsinline="" autoplay="" muted="" src="data/teaser/A girl is chopping wood/Focused Wood Chopping2025-09-06_10-15-06.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">A girl is chopping wood</h6>
+        </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex2" loop="" playsinline="" autoplay="" muted="" src="data/teaser/A girl is diving/A girl is diving1.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">A girl is diving.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex3" loop="" playsinline="" autoplay="" muted="" src="data/teaser/A girl is diving/A girl is diving2.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">A girl is diving.</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex4" loop="" playsinline="" autoplay="" muted="" src="data/teaser/A panda is lifting weights/Panda Weightlifting Fun2025-09-06_09-55-20.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">A panda is lifting weights</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex5" loop="" playsinline="" autoplay="" muted="" src="data/teaser/A panda is lifting weights/Panda's Garden Workout2025-09-06_09-52-32.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">A panda is lifting weights.</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex6" loop="" playsinline="" autoplay="" muted="" src="data/teaser/A woman is driving a convertible/Open Road Adventure2025-09-05_15-29-51.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">A woman is driving a convertible.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex7" loop="" playsinline="" autoplay="" muted="" src="data/teaser/A woman is driving a convertible/Open Road Adventure2025-09-05_15-30-09.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">A woman is driving a convertible.</h6>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Displayment2-multiple objects</h2>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex0" loop="" playsinline="" autoplay="" muted="" src="data/teaser/alien/20250628_1748_Alien Biking on Mars2_2025-06-28_18-16-45.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">alien1:An alien is riding a bicycle on mars</h6>
+        </div>
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex1" loop="" playsinline="" autoplay="" muted="" src="data/teaser/alien/20250628_1751_Speeding Alien on Mars_2025-06-28_18-18-19.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">alien2:An alien is riding a bicycle on mars</h6>
+        </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex2" loop="" playsinline="" autoplay="" muted="" src="data/teaser/adventurer/20250628_1744_Lunar Dino Adventure_2025-06-28_18-11-16.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">dinosaur1:An adventuerer is riding a dinosaur in the forest.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex3" loop="" playsinline="" autoplay="" muted="" src="data/teaser/adventurer/20250628_1744_Lunar Dino Adventure2_2025-06-28_18-11-59.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">dinosaur2:An adventuerer is riding a dinosaur in the forest.</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex4" loop="" playsinline="" autoplay="" muted="" src="data/teaser/astronaut/20250626_1134_Golfing in Space2025-06-26_21-28-16.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">An astronaut is playing golf.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex5" loop="" playsinline="" autoplay="" muted="" src="data/teaser/astronaut/20250626_1139_Cosmic Golf Adventure2025-06-26_21-25-11.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">An astronaut is playing golf.</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex6" loop="" playsinline="" autoplay="" muted="" src="data/teaser/robot/Cyberpunk Robot Skateboarding2025-09-06_10-08-06.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">robotskateboarding1:A robot is skateboarding indoor.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex7" loop="" playsinline="" autoplay="" muted="" src="data/teaser/robot/Futuristic Roboskater2025-09-06_10-08-31.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">robotskateboarding2:A robot is skateboarding in the desert.</h6>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Displayment3-vast scenes</h2>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex0" loop="" playsinline="" autoplay="" muted="" src="data/teaser/sunrise/3-Bluesky_Sun_on_valley@20240812-163602.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">Sun arises.</h6>
+        </div>
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex1" loop="" playsinline="" autoplay="" muted="" src="data/teaser/sunrise/Circular Sunrise Panorama2025-07-15_13-53-19.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">Sun arises.</h6>
+        </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex2" loop="" playsinline="" autoplay="" muted="" src="data/teaser/lighthouseboat/Island Lighthouse Serenity2025-09-06_21-41-53.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">A distant view of a boat sailing near a lighthouse</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex3" loop="" playsinline="" autoplay="" muted="" src="data/teaser/lighthouseboat/Serene Lighthouse Approach2025-09-06_21-36-41.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">A distant view of a boat sailing near a lighthouse</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex4" loop="" playsinline="" autoplay="" muted="" src="data/teaser/trainacrossvalley/Train Through Valley2025-09-05_14-44-36.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">train across valley.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex5" loop="" playsinline="" autoplay="" muted="" src="data/teaser/trainacrossvalley/Tranquil Valley Train2025-09-05_14-45-26.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">train across valley.</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex6" loop="" playsinline="" autoplay="" muted="" src="data/teaser/volcano erupting/Vibrant Volcano Eruption2025-07-12_11-29-11.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">volcano is erupting.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex7" loop="" playsinline="" autoplay="" muted="" src="data/teaser/volcano erupting/Whimsical Volcano Eruption2025-07-12_11-28-06.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">volcano is erupting.</h6>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>failure2success</h2>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex0" loop="" playsinline="" autoplay="" muted="" src="data/failuretosuccess/A girl is diving/1UNet Row+Column.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">A girl is diving</h6>
+        </div>
+        <div class="col-6">
+            <div class="video-compare-container" style="width: 100%">
+                <video class="video lazy" id="ex1" loop="" playsinline="" autoplay="" muted="" src="data/failuretosuccess/A girl is diving/9UNet-DiT I-Swin.mp4" onplay="resizeAndPlay(this)"></video>
+            </div>
+            <h6 class="caption">Text Extended Module:A girl is diving</h6>
+        </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex2" loop="" playsinline="" autoplay="" muted="" src="data/failuretosuccess/A woman is driving a convertible/20250702_1738_Convertible Freedom Drive_2025-07-27_10-51-46.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">A woman is driving a convertible.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex3" loop="" playsinline="" autoplay="" muted="" src="data/failuretosuccess/A woman is driving a convertible/20250702_1910_Open Road Adventure_2025-07-27_10-52-14.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Text-4D Gated Mechanism:A woman is driving a convertible.</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex4" loop="" playsinline="" autoplay="" muted="" src="data/failuretosuccess/sunrise/3-Sun_rise_valley@20240805-204658.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Sun rise from valley.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex5" loop="" playsinline="" autoplay="" muted="" src="data/failuretosuccess/sunrise/20250702_1002_Circular Sunrise Panorama2025-07-15_13-53-19.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Data Weighted Training:Sun rise from valley.</h6>
+            </div>
+        </div>
+        <div class="row captioned_videos">
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex6" loop="" playsinline="" autoplay="" muted="" src="data/failuretosuccess/trainacrossvalley/20250702_0940_Miniature Train Adventure_2025-07-27_11-01-13.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Train across valley.</h6>
+            </div>
+            <div class="col-6">
+                <div class="video-compare-container" style="width: 100%">
+                    <video class="video lazy" id="ex7" loop="" playsinline="" autoplay="" muted="" src="data/failuretosuccess/trainacrossvalley/20250702_0938_Tranquil Valley Train_2025-07-27_11-00-44.mp4" onplay="resizeAndPlay(this)"></video>
+                </div>
+                <h6 class="caption">Spherical Cross Attention:Train across valley.</h6>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+ 
+
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="container" style="max-width: 768px;">
+        <footer>
+            <p> Website template from <a href="https://dreamfusion3d.github.io/">DreamFusion</a> and <a href="https://mv-dream.github.io/">MVDream</a> . We thank the authors for the open-source code.</p>
+        </footer>
+    </div>
+    <script src="./index_files/yall.js.download"></script>
+    <script>
+        yall(
+            {
+                observeChanges: true
+            }
+        );
+    </script>
+
+
+
+</body></html>
